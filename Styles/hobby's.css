@@ -1,0 +1,75 @@
+/*
+    Auteur: Mahmoud Ibrahim 
+    Datum: 20-12-2023
+    Project CV
+*/
+
+#hobby
+{
+    border: 1px solid #d98f285e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px #D99028;
+    background-color: #d98f284a;
+}
+
+article
+{
+    text-align: left;
+}
+
+div
+{
+    padding-top: 10px;
+}
+
+.foto5
+{
+    height: 40.376850605652756vh;
+    width: 29.296875vw;
+    border-radius: 20px;
+}
+
+section img
+{
+    height: 53.83580080753701vh;
+    width: 45.572916666666664vw;
+    margin-left: 0.3vw;
+    margin-top: 0.6vh;
+}
+
+#leegscroll
+{
+    margin-bottom: 20vh;
+}
+
+@media screen and (orientation: portrait)
+{
+
+    div
+    {
+        padding-top: 5px;
+    }
+
+    .foto5
+    {
+        height: 28vh;
+        width: 80vw;
+    }
+    
+    section img
+    {
+        height: 40vh;
+        width: 90vw;
+    }
+
+    #leegscroll
+    {
+        margin-bottom: 20vh;
+    }
+
+    #hobbymenu ul li a
+    {
+        font-size: 2vh;
+        padding: 15px;
+    }
+}

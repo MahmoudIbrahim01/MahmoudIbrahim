@@ -1,0 +1,334 @@
+/*
+    Auteur: Mahmoud Ibrahim 
+    Datum: 20-12-2023
+    Project CV
+*/
+
+/* hier onder verander ik de lettertype van mijn website */
+@font-face
+{
+    font-family: BookAntiqua;
+    src: url(../Fonts/BookAntiqua/Book-Antiqua.ttf);
+}
+
+@font-face
+{
+    font-family: "mijnfont2";
+    src: url(../Fonts/BodoniMT/BodoniMT.ttf);
+}
+ 
+/* hier onder zorg ik ervoor dat de body geen scrollbalk heeft*/
+body
+{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a,.foettekst
+{
+    font-family: BookAntiqua;
+}
+
+h1,h2,p
+{
+    font-family: "mijnfont2";
+    font-weight: 100;
+    margin: 0;
+    margin-left: 0.3255208333333333vw;
+}
+/* hier onder geef ik mijn header een hoogte*/
+header
+{
+    height: 10vh;
+    width: 100vw;
+    top: 0;
+    background-color: black;
+    position: fixed;
+}
+
+/* hier onder geef ik de navigatie hoogte en float*/
+nav
+{
+    top: 0;
+    height: 10vh;
+    float: right;
+    margin-right: 1.6276041666666667vw;
+}
+
+ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+/* hier onder haal ik de style en de decoratie van de tekst van de navigatie af*/
+ul li, a
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+/* hier onder geef ik de navigatie woorden kleur en groote*/
+li a
+{
+    text-decoration: none;
+    color: #D99028 ;
+    font-size: 1.6276041666666667vw;
+    margin-left: 1.3020833333333333vw;
+    padding: 3vh;
+}
+
+/* hier onder zorg ik ervoor dat als je met muis op de navigatie komt de tekst krijgt een opmaak*/
+li a:hover
+{
+    display: block;
+    background-color: #d98f284a;
+    box-shadow: 0px 0px 30px 0px #D99028;
+    border-radius: 10px;
+}
+
+/* hier onder zet ik de hamburgermenu default niet te zien*/
+#menu,#menuToggle
+{
+    display: none;
+}
+
+/* hier onder ben ik de hamburgermenu woorden aan het stylen*/
+#menuknop
+{
+
+    color: #D99028;
+    font-size: 2.6041666666666665vw;
+    position: absolute;
+    top: 3.3647375504710633vh;
+    right: 4.557291666666667vw;
+    display: none;
+}
+/* hier onder geef ik mijn logo een hoogte een breedte*/
+.logo
+{
+    height: 9vh;
+    width: 7vw;
+}
+
+main
+{
+    height: 80vh;
+    text-align: center;
+}
+
+/* hier onder zorg ik dat de article op de goeie plek komt m.b.v float*/
+article
+{
+    position: fixed;
+    top: 10vh;
+    left: 30.9vw;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    border: 1px white solid;
+    width: 69vw;
+    float: right;
+    overflow: auto;
+}
+
+p
+{
+    font-size: 1.3020833333333333vw;
+}
+/* hier onder geef ik de tekst een andere lettertype groote*/
+
+h2,h1
+{
+    color: #D99028;
+    font-size: 1.953125vw;
+}
+
+/* hier onder zorg ik dat de aside en de inhoud daarvan goed en nejes zichtbaar is*/
+aside
+{
+    position: fixed;
+    top: 10vh;
+    text-align: center;
+    float: left;
+    background-color: #D99028;
+    width: 30.85vw;
+    height: 80vh;
+    color: white;
+    border-top: 1px solid white;
+    overflow: auto;
+}
+
+.foto1,.foto2,.foto3,.foto4,.foto6
+{
+    height: 51.2vh;
+    width: 19.5vw;
+}
+
+#div1,#div2,#div3,#div4,#div6
+{
+    padding-top: 0.2vh;
+}
+
+
+#facebook,#instagram
+{
+    font-size: 1.953125vw;
+}
+
+div h1
+{
+    color: white;
+    font-weight: 100;
+    padding-bottom: 0px;
+}
+
+div a
+{
+    text-decoration: none;
+}
+
+
+footer
+{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    bottom: 0;
+    clear: both;
+    border: solid 1px white;
+    background-color: #000000;
+    color: #D99028;
+}
+
+footer p
+{
+    padding-top: 2.4226110363391657vh;
+    font-size: 1.6276041666666667vw;
+}
+
+/* hier onder gebruik ik media quree om de inhoud van de website aan de portrait aan te passen*/
+@media screen and (orientation: portrait)
+{
+
+    header
+    {
+        position: fixed;
+    }
+
+    .logo
+    {
+        height: 8vh;
+        width: 20vw;
+    }
+
+    .navigatie
+    {
+        display: none;
+    }
+
+    #menuknop
+    {
+        top: 1vh;
+        right: 2vh;
+        display: block;
+        font-size: 6vh;
+    }
+
+    #menu
+    {
+        display: block;
+        height: 56vh;
+        width: 88vw;
+    }
+
+    .menuitems
+    {
+        color: black;
+        font-size: 2vh;
+        padding: 3vh;
+        margin-top: 1vh;
+        width: 85vw;
+        margin-left: 1vw;
+        border: white solid 1px;
+        background-color: #D99028;
+        box-shadow: 0px 0px 5px 0px white;
+        border-radius: 10px;
+    }
+
+    #menuToggle
+    {
+        position: absolute;
+        height: 60vh;
+        width: 99.5vw;
+        top: 8.2vh;
+        background-color: black;
+        border: white 1px solid;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    p
+    {
+        font-size: 1.5vh;
+    }
+
+    h2,h1
+    {
+        color: #D99028;
+        font-size: 2vh;
+    }
+
+    article 
+    {
+        position: fixed;
+        right: auto;
+        top: 48.16vh;   
+        width: 100vw;
+        height: 48vh;
+        left: 0;
+        overflow: auto;
+    }
+
+    aside 
+    {
+        position: fixed;
+        top: 8vh;
+        width: 100vw;
+        height: 40vh;
+        overflow: auto;
+    }
+
+    #facebook,#instagram
+    {
+        font-size: 1.953125vh;
+    }
+
+    .foto1,.foto2,.foto3,.foto4,.foto6
+    {
+        height: 28vh;
+        width: 43vw;
+    }
+
+    #div1,#div2,#div3,#div4,#div6
+    {
+        padding-top: 0;
+    }
+
+    footer 
+    {
+        position: fixed;
+        width: 100vw;
+        height: 5vh;
+        bottom: 0;
+    }
+
+    footer p 
+    {
+        font-size: 1.5vh;
+        padding-top: 1vh;
+    }
+}

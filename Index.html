@@ -1,0 +1,124 @@
+<!-- 
+    Auteur: Mahmoud Ibrahim 
+    Datum: 20-12-2023
+    Project CV
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mahmoud Ibrahim</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hier onder link ik mijn Stylesheet -->
+    <link rel="stylesheet" href="Styles/Stylesheet.css">
+    <!-- linken van home stylesheet-->
+    <link rel="stylesheet" href="Styles/home.css">
+    <!-- Linken van de online css stylesheet met de icons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- linken van de javascript bestand -->
+    <script src="Scripts/script2.js" defer></script>
+</head>
+<body>
+    <!-- hieronder maak ik de header en navbar element -->
+    <header>
+        <a href="Index.html"><img src="IMG's/Schermafbeelding 2023-12-15 140528.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Index.html" class="navigatie" id="home">Home</a>
+                </li>
+                <li>
+                    <a href="Pages/portofolie.html" class="navigatie" id="protfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="Pages/ervaringen.html" class="navigatie" id="ervaringen">Ervaringen</a>
+                </li>
+                <li>
+                    <a href="Pages/resultaten.html" class="navigatie" id="resultaten">Resultaten</a>
+                </li>
+                <li>
+                    <a href="Pages/hobby's.html" class="navigatie" id="hobby">Hobby's</a>
+                </li>
+                <li>
+                    <a href="Pages/contact.html" class="navigatie" id="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hier onder maak ik een knop voor de hamburgermenu-->
+        <a  id="menuknop" onclick="menu()" class="lni lni-menu"></a>
+    </header>
+    <main>
+        <!-- hier onder heb ik een articel gemaakt om de inhoud van de website in te zetten-->
+        <article id="homearticle">
+            <h2>
+                Persoonlijk informatie
+            </h2>
+            <p>
+                Welkom op mijn website <a href="Index.html" class="tekstNav">“Mahmoud Ibrahim CV”</a>. Hier zijn er 
+                Informatie over mij te vinden, 
+                zoals wat voor persoon ik ben, waar ik woon, hobby’s, ervaringen, waar ik gestudeerd heb en wat voor 
+                opleiding ik aan het doen ben. Mijn naam is Mahmoud Ibrahim, ik ben 18 jaar oud (08/03/2006) en ik woon in Vlijmen.
+            </p>
+            <h2>
+                Over mij
+            </h2>
+            <p>
+                Ik zat op een middelbaar school ( SG De Overlaat) op een GT-niveau (gemeende theoretische leerweg)
+                en ik heb het met hoge resultaten 
+                afgerond en was de hoogste resultaten van de school. En vanaf 01/09/2023 ben ik begonnen met mijn
+                nieuwe opleiding ICT Software Developer met een mbo 4 niveau en ik vind het een mooi en leuk opleiding en dat is op Koning
+                Willem 1 Collega. Ik ben ook van plan om verder te studeren. Ik kan tot nu toe marr paar Programmeer talen, zoals HTML, CSS, 
+                JavaScript en php. Ik heb top <a href="Pages/resultaten.html" class="tekstNav">resultaten!</a>.
+                Naast school werk ik ook bij een supermarkt (Jumbo) als kassa medewerker, ik werk nu al bijna 3 jaren daar.
+                voor meer informatie over school en werk kunt u naar <a href="Pages/portofolie.html" class="tekstNav">portfolio</a>.
+            </p>
+            <h2>
+                Overig informatie
+            </h2>
+            <p id="marginonder">
+                Ik ga nog wat vertellen over mijn <a href="Pages/hobby's.html" class="tekstNav">hobby’s</a>, mijn hobby is eigenlijk
+                zwemmen, gamen en theoretische apparaten opbouwen. ik heb ook nog ervaringen die kunt u ook bekijken bij 
+                <a href="Pages/ervaringen.html" class="tekstNav">ervaringen</a>.
+                Als u nog vragen hebt kunt u altijd met mij <a href="Pages/contact.html" class="tekstNav">contact</a> opnemen. 
+            </p>
+        </article>
+        <!-- Hier onder maak ik een aside voor de foto en de persoonlijke informatie-->
+        <aside id="homeaside">
+            <div>
+                <h1 id="divh1">
+                    Mahmoud Ibrahim
+                </h1>
+                <img src="IMG's/IMG-20230819-WA0005.jpg" alt="foto1" class="foto1">
+                <p>
+                    Tel: 0643959...
+                </p>
+                <p>
+                    mahmoudibrahim20...@gmail.com
+                </p>
+                <p>
+                    socialemedia
+                </p>
+                <a id="facebook" class="lni lni-facebook-oval" href="https://www.facebook.com/profile.php?id=100030462527716" target="_blank"></a>
+                <a id="instagram" class="lni lni-instagram" href="https://www.instagram.com/mahmoud__ibrahim01?igsh=MTAwOTJpaHhhMnZtag%3D%3D&utm_source=qr" target="_blank"></a>
+            </div>
+        </aside>
+        <!-- hier onder maak ik een navigatie voor de hamburgermenu met id's en classes voor opmaak en positions-->
+        <div id="menuToggle">
+            <ul id="menu">
+              <li class="menuliitems"><a class="menuitems" href="Index.html">Home</a></li>
+              <li class="menuliitems"><a class="menuitems" href="./Pages/portofolie.html">Portfolio</a></li>
+              <li class="menuliitems"><a class="menuitems" href="./Pages/ervaringen.html">Ervaringen</a></li>
+              <li class="menuliitems"><a class="menuitems" href="./Pages/resultaten.html">Resultaten</a></li>
+              <li class="menuliitems"><a class="menuitems" href="./Pages/hobby's.html">Hobby's</a></li>
+              <li class="menuliitems"><a class="menuitems" href="./Pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </main>
+    <!-- hier onder heb ik de footer met de tekst en de copyright teken-->
+    <footer>
+        <p class="foettekst">
+            &copy; 2024 Designed and developed by Mahmoud Ibrahim
+        </p>
+    </footer>
+</body>
+</html>

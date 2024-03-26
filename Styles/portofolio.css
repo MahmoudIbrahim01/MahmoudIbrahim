@@ -1,0 +1,63 @@
+/*
+    Auteur: Mahmoud Ibrahim 
+    Datum: 20-12-2023
+    Project CV
+*/
+
+#portfolio
+{
+    border: 1px solid #d98f285e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px #D99028;
+    background-color: #d98f284a;
+}
+
+article
+{
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.foto2
+{
+    border-radius: 20px;
+}
+
+.fotosport
+{
+    height: 67vh;
+    width: 52vw;
+    margin-top: 10px;
+}
+
+.portdiv
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.portdiv
+{
+    margin-bottom: 20vh;
+}
+
+
+@media screen and (orientation: portrait)
+{
+    .fotosport
+    {
+        height: 40vh;
+        width: 90vw;
+        margin-top: 10px;
+    }
+
+    .portdiv
+    {
+        margin-bottom: 20vh;
+    }
+
+    div 
+    {
+        padding-top: 5px;
+    }
+}
