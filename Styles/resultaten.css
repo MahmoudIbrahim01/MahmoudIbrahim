@@ -1,0 +1,93 @@
+/*
+    Auteur: Mahmoud Ibrahim 
+    Datum: 20-12-2023
+    Project CV
+*/
+
+#resultaten
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 1px #ff001e;
+    background-color: #CF1127;
+}
+article
+{
+    text-align: left;
+    overflow: auto;
+}
+
+table
+{
+    text-align: center;
+}
+
+.foto4
+{
+    border-radius: 20px;
+}
+
+
+table,tr,th,td
+{
+    border: white solid 1px;
+    font-size: 1.3vw;
+}
+
+#bereken
+{
+    font-size: 1.5vw;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;   
+    padding: 10px;
+}
+
+#bereken:hover
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 1px #ff001e;
+    background-color: #CF1127;
+}
+
+table
+{
+    margin-left: 5vw;
+    margin-top: 8vh;
+}
+
+#table1
+{
+    margin-bottom: 20vh;
+}
+
+
+@media screen and (orientation: portrait)
+{
+
+    article
+    {
+        overflow: auto;
+    }
+
+    div 
+    {
+        padding-top: 5px;
+    }
+
+    #bereken
+    {
+        font-size: 1.4vh;
+    }
+
+    th,td
+    {
+        font-size: 1.4vh;
+    }
+
+    #table1
+    {
+        margin-bottom: 5vh;
+        margin-left: 0.1vh;
+        margin-top: 0.1vw;
+    }
+}
