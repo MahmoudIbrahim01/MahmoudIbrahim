@@ -1,68 +1,226 @@
 /*
     Auteur: Mahmoud Ibrahim 
     Datum: 20-12-2023
-    Last update: 25-03-2026
     Project CV
 */
 
-#contact {
-    color: var(--primary);
+#contact
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 1px #ff001e;
+    background-color: #CF1127;
 }
 
-/* ===== LAYOUT ===== */
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+article
+{
+    text-align: center;
+    overflow-y: auto;
 }
 
-/* ===== INFO ===== */
-.info {
-    font-size: 0.95rem;
+.foto6
+{
+    border-radius: 20px;
 }
 
-/* ===== FORM ===== */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+h1
+{
+    margin-bottom: 10px;
 }
 
-input, textarea {
-    padding: 0.8rem;
-    border-radius: 8px;
-    border: 1px solid #333;
-    background: #1a1d24;
+h2
+{
     color: white;
 }
 
-input::placeholder,
-textarea::placeholder {
-    color: #888;
+.form-container
+{
+    float: right;
+    margin-right: 5.208333333333333vw;
 }
 
-button {
-    background: var(--primary);
-    border: none;
-    padding: 0.8rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+.info
+{
+    float: left;
 }
 
-button:hover {
-    background: #b89655;
+.info
+{
+    margin-left: 5.208333333333333vw;
+    margin-top: 5.383580080753701vh;
+    color: black;
 }
 
-/* ===== MAP ===== */
-iframe {
-    width: 100%;
-    border-radius: 12px;
+iframe
+{
+    border-radius: 10px;
+    height: 40.376850605652756vh;
+    width: 19.53125vw;
+    margin-bottom: 20vh;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
+iframe:hover
+{
+    box-shadow: 0px 0px 25px 0px #CF1127;
+}
+
+.infoh1
+{
+    margin-top: 1vw;
+    padding: 0.2vw;
+    color: #CF1127;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+div h1 
+{
+    margin: 0;
+    padding: 0.2vw;
+}
+
+.form-container
+{
+    margin-top: 5vh
+}
+
+.form-container h1 
+{
+    margin-top: 1vw;
+    padding: 0.5vw;
+    color: #CF1127;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+::placeholder
+{
+    color: white;
+}
+
+input
+{
+    background-color: #000000;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.3vw;
+    width: 32.5vw;
+    height: 4vh;
+    margin-top: 1.5vw;
+}
+
+textarea
+{
+    background-color: #000000;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1.5vw;
+    font-size: 1.3vw;
+    padding: 10px;
+}
+
+.verzend
+{
+    background-color: #000000;
+    color: white;
+    height: 5.383580080753701vh;
+    width: 26.041666666666668vw;
+    font-weight: 600;
+    font-size: 1.3020833333333333vw;
+}
+
+.verzend:hover
+{
+    border: 2px;
+    box-shadow: 0px 0px 25px 0px #ff001e;
+}
+
+
+@media screen and (orientation: portrait)
+{
+
+    article 
+    {
+        position: fixed;
+        top: 48.16vh;   
+        width: 99.6vw;
+        overflow: auto;
+        height: 46.8vh;
+    }
+
+    aside 
+    {
+        position: fixed;
+        top: 8vh;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    div 
+    {
+        padding-top: 5px;
+    }
+
+    div h1 
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    .info
+    {
+        padding: 0;
+        margin: 0;
+        margin-left: 13vw;
+        margin-top: 2vh;
+    }
+
+    form 
+    {
+        width: 80vw;
+    }
+
+    .form-container h1
+    {
+        margin-left: 15vw;
+    }
+
+    .form-container
+    {
+        width: 60vw;
+        margin: 0;
+        padding: 0;
+        margin-top: 2vh;
+        float: left;
+        margin-left: 5vh;
+    }
+
+    .verzend
+    {
+        width: 40vw;
+        font-size: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    input
+    {
+        width: 70vw;
+        height: 5vh;
+        font-size: 1.5vh;
+    }
+
+    textarea
+    {
+        font-size: 1.5vh;
+        height: 10vh;
+        width: 65vw;
+    }
+
+    iframe
+    {
+        height: 25vh;
+        width: 70vw;  
+        margin-bottom: 20vh; 
     }
 }
