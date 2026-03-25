@@ -4,351 +4,124 @@
     Project CV
 */
 
-/* hier onder verander ik de lettertype van mijn website */
-@font-face
-{
-    font-family: BookAntiqua;
-    src: url(../Fonts/BookAntiqua/Book-Antiqua.ttf);
-}
-
-@font-face
-{
-    font-family: "mijnfont2";
-    src: url(../Fonts/BodoniMT/BodoniMT.ttf);
-}
- 
-/* hier onder zorg ik ervoor dat de body geen scrollbalk heeft*/
-body
-{
-    overflow: hidden;
+/* ===== RESET ===== */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul li a,.foettekst,h1,p,h2
-{
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background-color: #0f1115;
+    color: #e5e7eb;
+    line-height: 1.6;
 }
 
-h1,h2,p
-{
-    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-    margin: 0;
-    margin-left: 0.3255208333333333vw;
+/* ===== KLEUREN ===== */
+:root {
+    --primary: #c6a96b;   /* goud */
+    --secondary: #1a1d24; /* donker */
+    --accent: #2a2f3a;
+    --text: #e5e7eb;
 }
-/* hier onder geef ik mijn header een hoogte*/
-header
-{
-    height: 10vh;
-    width: 100vw;
+
+/* ===== HEADER ===== */
+header {
+    position: sticky;
     top: 0;
-    background-color: #017B3D;
-    position: fixed;
+    background: rgba(15,17,21,0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    z-index: 100;
 }
 
-/* hier onder geef ik de navigatie hoogte en float*/
-nav
-{
-    top: 0;
-    height: 10vh;
-    float: right;
-    margin-right: 1.6276041666666667vw;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul
-{
-    margin-top: 1vh;
-    padding: 0;
+.logo {
+    height: 50px;
 }
 
-/* hier onder haal ik de style en de decoratie van de tekst van de navigatie af*/
-ul li, a
-{
-    list-style-type: none;
-    display: inline-block;
+/* ===== NAV ===== */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
 }
 
-/* hier onder geef ik de navigatie woorden kleur en groote*/
-li a
-{
+nav a {
     text-decoration: none;
-    color: black ;
-    font-size: 1.6276041666666667vw;
-    margin-left: 1.3020833333333333vw;
-    padding: 1.5vh;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-/* hier onder zorg ik ervoor dat als je met muis op de navigatie komt de tekst krijgt een opmaak*/
-li a:hover
-{
-    display: block;
-    color: rgb(0, 0, 0);
-    background-color: #cf1127;
-    box-shadow: 1px 1px 0px 1px #ff001e;
-    border-radius: 10px;
+nav a:hover {
+    color: var(--primary);
 }
 
-/* hier onder zet ik de hamburgermenu default niet te zien*/
-#menu,#menuToggle
-{
-    display: none;
+/* ===== LAYOUT ===== */
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: calc(100vh - 120px);
 }
 
-/* hier onder ben ik de hamburgermenu woorden aan het stylen*/
-#menuknop
-{
-
-    color: #CF1127;
-    font-size: 2.6041666666666665vw;
-    position: absolute;
-    top: 3.3647375504710633vh;
-    right: 4.557291666666667vw;
-    display: none;
-}
-/* hier onder geef ik mijn logo een hoogte een breedte*/
-.logo
-{
-    margin-left: 5vw;
-    margin-top: 0.5vh;
-    height: 9vh;
-    width: 7vw;
+/* ===== SIDEBAR ===== */
+aside {
+    background: var(--secondary);
+    padding: 2rem;
 }
 
-main
-{
-    height: 80vh;
+aside img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ===== CONTENT ===== */
+article {
+    padding: 2rem;
+}
+
+/* ===== TYPO ===== */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
     text-align: center;
+    padding: 1rem;
+    background: var(--secondary);
+    font-size: 0.9rem;
 }
 
-/* hier onder zorg ik dat de article op de goeie plek komt m.b.v float*/
-article
-{
-    position: fixed;
-    top: 10vh;
-    left: 30.9vw;
-    height: 80vh;
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    width: 69vw;
-    float: right;
-    overflow: auto;
-}
-
-p
-{
-    font-size: 1.1020833333333333vw;
-}
-/* hier onder geef ik de tekst een andere lettertype groote*/
-
-h1
-{
-    font-size: 1.753125vw;
-    padding: 1vw;
-}
-
-h2
-{
-    margin-top: 1vw;
-    color: #CF1127;
-    padding: 0.2vw;
-    width: 16vw;
-    background-color: black;
-    border-radius: 10px;
-    font-size: 1.753125vw;
-    font-weight: 100;
-}
-
-.tekstNav
-{
-    color: #017B3D;
-}
-
-/* hier onder zorg ik dat de aside en de inhoud daarvan goed en nejes zichtbaar is*/
-aside
-{
-    position: fixed;
-    top: 10vh;
-    border-top: #000000;
-    text-align: center;
-    float: left;
-    background-color: black;
-    width: 30.85vw;
-    height: 80vh;
-    color: white;
-    overflow: auto;
-}
-
-.foto1,.foto2,.foto3,.foto4,.foto6
-{
-    height: 51.2vh;
-    width: 19.5vw;
-}
-
-#div1,#div2,#div3,#div4,#div6
-{
-    padding-top: 0.2vh;
-}
-
-
-#facebook,#instagram
-{
-    font-size: 1.953125vw;
-}
-
-div h1
-{
-    color: white;
-    font-weight: 100;
-    padding: 0.5vw;
-}
-
-div a
-{
-    text-decoration: none;
-}
-
-
-footer
-{
-    border-top: 1px solid #017B3D;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    height: 10vh;
-    width: 100vw;
-    bottom: 0;
-    clear: both;
-    background-color: #000000;
-    color: #017B3D;
-}
-
-footer p
-{
-    padding-top: 2.4226110363391657vh;
-    font-size: 1.6276041666666667vw;
-}
-
-/* hier onder gebruik ik media quree om de inhoud van de website aan de portrait aan te passen*/
-@media screen and (orientation: portrait)
-{
-
-    header
-    {
-        position: fixed;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
     }
 
-    .logo
-    {
-        height: 8vh;
-        width: 20vw;
+    aside {
+        order: -1;
     }
 
-    .navigatie
-    {
+    nav ul {
         display: none;
-    }
-
-    #menuknop
-    {
-        top: 1vh;
-        right: 2vh;
-        display: block;
-        font-size: 6vh;
-    }
-
-    #menu
-    {
-        display: block;
-        height: 56vh;
-        width: 88vw;
-    }
-
-    .menuitems
-    {
-        color: black;
-        font-size: 2vh;
-        padding: 3vh;
-        margin-top: 1vh;
-        width: 85vw;
-        margin-left: 1vw;
-        border: white solid 1px;
-        background-color: #CF1127;
-        box-shadow: 0px 0px 5px 0px white;
-        border-radius: 10px;
-    }
-
-    #menuToggle
-    {
-        position: absolute;
-        height: 60vh;
-        width: 99.5vw;
-        top: 8.2vh;
-        background-color: black;
-        border: white 1px solid;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    p
-    {
-        font-size: 1.5vh;
-    }
-
-    h2,h1
-    {
-        color: #CF1127;
-        font-size: 2vh;
-        background-color: #000000;
-        border-radius: 10px;
-    }
-
-    article 
-    {
-        position: fixed;
-        right: auto;
-        top: 48.16vh;   
-        width: 100vw;
-        height: 48vh;
-        left: 0;
-        overflow: auto;
-    }
-
-    aside 
-    {
-        position: fixed;
-        top: 8vh;
-        width: 100vw;
-        height: 40vh;
-        overflow: auto;
-    }
-
-    #facebook,#instagram
-    {
-        font-size: 1.953125vh;
-    }
-
-    .foto1,.foto2,.foto3,.foto4,.foto6
-    {
-        height: 28vh;
-        width: 43vw;
-    }
-
-    #div1,#div2,#div3,#div4,#div6
-    {
-        padding-top: 0;
-    }
-
-    footer 
-    {
-        position: fixed;
-        width: 100vw;
-        height: 5vh;
-        bottom: 0;
-    }
-
-    footer p 
-    {
-        font-size: 1.5vh;
-        padding-top: 1vh;
     }
 }
