@@ -43,10 +43,6 @@ nav {
     align-items: center;
 }
 
-.logo {
-    height: 50px;
-}
-
 /* ===== NAV ===== */
 nav ul {
     display: flex;
