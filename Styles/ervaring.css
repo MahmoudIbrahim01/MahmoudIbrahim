@@ -4,68 +4,21 @@
     Project CV
 */
 
-#ervaringen
-{
-    border-radius: 10px;
-    box-shadow: 1px 1px 0px 1px #ff001e;
-    background-color: #CF1127;
+#ervaringen {
+    color: var(--primary);
 }
 
-article
-{
-    text-align: left;
+.schoolwerkfoto {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1rem 0;
 }
 
-.schoolwerkfoto,iframe
-{
-    margin-left: 0.3255208333333333vw;
-    height: 40.646029609690444vh;
-    width: 32.552083333333336vw;
-    border-radius: 10px;
-}
-
-.foto3
-{
-    border-radius: 20px;
-}
-
-.linkwoorden
-{
-    list-style-type: none;
+a.linkwoorden {
+    color: var(--primary);
     text-decoration: none;
-    color: #017B3D;
 }
 
-#leegonder
-{
-    margin-bottom: 20vh;
-}
-
-
-@media screen and (orientation: portrait)
-{
-
-    div 
-    {
-        padding-top: 5px;
-    }
-
-    .schoolwerkfoto
-    {
-        margin-left: 0.5vw;
-        height: 40vh;
-        width: 90.5vw;
-    }
-
-    .leegonder
-    {
-        margin-bottom: 10vh;
-    }
-
-    iframe
-    {
-        margin-left: 0.5vw;
-        height: 40vh;
-        width: 90vw;
-    }
+a.linkwoorden:hover {
+    text-decoration: underline;
 }
