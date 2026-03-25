@@ -1,45 +1,93 @@
 /*
     Auteur: Mahmoud Ibrahim 
     Datum: 20-12-2023
-    Last update: 25-03-2026
     Project CV
 */
 
-#resultaten {
-    color: var(--primary);
+#resultaten
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 1px #ff001e;
+    background-color: #CF1127;
+}
+article
+{
+    text-align: left;
+    overflow: auto;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 2rem;
-}
-
-th, td {
-    border: 1px solid #333;
-    padding: 0.7rem;
+table
+{
     text-align: center;
 }
 
-th {
-    background: var(--secondary);
+.foto4
+{
+    border-radius: 20px;
 }
 
-tr:nth-child(even) {
-    background: #1a1d24;
+
+table,tr,th,td
+{
+    border: white solid 1px;
+    font-size: 1.3vw;
 }
 
-/* knop */
-#bereken {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1rem;
-    background: var(--primary);
-    color: black;
-    border-radius: 8px;
+#bereken
+{
+    font-size: 1.5vw;
+    list-style-type: none;
     text-decoration: none;
+    color: black;   
+    padding: 10px;
 }
 
-#bereken:hover {
-    background: #b89655;
+#bereken:hover
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px 1px #ff001e;
+    background-color: #CF1127;
+}
+
+table
+{
+    margin-left: 5vw;
+    margin-top: 8vh;
+}
+
+#table1
+{
+    margin-bottom: 20vh;
+}
+
+
+@media screen and (orientation: portrait)
+{
+
+    article
+    {
+        overflow: auto;
+    }
+
+    div 
+    {
+        padding-top: 5px;
+    }
+
+    #bereken
+    {
+        font-size: 1.4vh;
+    }
+
+    th,td
+    {
+        font-size: 1.4vh;
+    }
+
+    #table1
+    {
+        margin-bottom: 5vh;
+        margin-left: 0.1vh;
+        margin-top: 0.1vw;
+    }
 }
