@@ -19,7 +19,7 @@
     <!-- linken van de javascript bestand -->
     <script src="../Scripts/script2.js" defer></script>
 </head>
-<body>
+<body class="content-page">
     <header>
         <nav>
             <ul>
@@ -27,13 +27,7 @@
                     <a href="../index.html" id="home">Home</a>
                 </li>
                 <li>
-                    <a href="portofolie.html" id="portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="ervaringen.html" id="ervaringen">Ervaringen</a>
-                </li>
-                <li>
-                    <a href="resultaten.html" id="resultaten">Resultaten</a>
+                    <a href="portfolio.html" id="portfolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="hobby's.html" id="hobby">Hobby's</a>
@@ -55,7 +49,6 @@
                 en altijd de beste te zijn. ik ben zo gewend vanaf mijn eerste dag op school ooit en ik blijf altijd zo. Ik ben ook snel met informaties onthouden
                 <br> en ik kan ook snel leren en dat kunt u allemaal terug zien in mijn cijfer lijst die u hier onder kunt zien.
             </p>
-            <hr>
             <!-- hier onder maak ik een tabel element om vanuit javascript af te maken en in te vullen-->
                 <table id="table1">
                     <tr id="cijfersvan">
@@ -178,31 +171,10 @@
                     <a href="#" onclick='gemiddeldeCo()' id="bereken5"></a>
             </div>
         </article>
-        <aside>
-            <div id="div4">
-                <h1>
-                    Mahmoud Ibrahim
-                </h1>
-                <img src="../IMG's/20230815_171926.jpg" alt="foto4" class="foto4">
-                <p>
-                    Tel: 0643959...
-                </p>
-                <p>
-                    mahmoudibrahim20...@gmail.com
-                </p>
-                <p>
-                    socialemedia
-                </p>
-                <a id="facebook" class="lni lni-facebook-oval" href="https://www.facebook.com/profile.php?id=100030462527716" target="_blank"></a>
-                <a id="instagram" class="lni lni-instagram" href="https://www.instagram.com/mahmoud__ibrahim01?igsh=MTAwOTJpaHhhMnZtag%3D%3D&utm_source=qr" target="_blank"></a>
-            </div>
-        </aside>
         <div id="menuToggle">
             <ul id="menu">
               <li class="menuliitems"><a class="menuitems" href="../index.html">Home</a></li>
-              <li class="menuliitems"><a class="menuitems" href="portofolie.html">Portfolio</a></li>
-              <li class="menuliitems"><a class="menuitems" href="ervaringen.html">Ervaringen</a></li>
-              <li class="menuliitems"><a class="menuitems" href="resultaten.html">Resultaten</a></li>
+              <li class="menuliitems"><a class="menuitems" href="portfolio.html">Portfolio</a></li>
               <li class="menuliitems"><a class="menuitems" href="hobby's.html">Hobby's</a></li>
               <li class="menuliitems"><a class="menuitems" href="contact.html">Contact</a></li>
             </ul>
@@ -210,7 +182,7 @@
     </main>
     <footer>
         <p class="foettekst">
-            &copy; 2024 Designed and developed by Mahmoud Ibrahim
+            &copy; <span id="jaar"></span> Designed and developed by Mahmoud Ibrahim
         </p>
     </footer>
 </body>

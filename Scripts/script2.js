@@ -137,3 +137,8 @@ function emailverzenden()
     + "<br> Vraag: " + document.getElementById("text").value,
     })
 }
+
+  const huidigJaar = new Date().getFullYear();
+
+  
+  document.getElementById('jaar').textContent = huidigJaar;
