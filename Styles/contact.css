@@ -284,10 +284,10 @@ textarea
 }
 
 .contactfoto {
-    width: min(180px, 54vw);
-    height: min(180px, 54vw);
+    width: min(260px, 54vw);
+    height: min(260px, 54vw);
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 14px;
 }
 
 .contact-page .form-container {
