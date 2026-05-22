@@ -22,107 +22,6 @@ function menu()
     }
 }
 
-var gemiddeldeshow1 = false;
-
-// hier onder maak ik een functie om de gemiddelde cijfer te berekenen
-function gemiddeldePra(Praktijk)
-{
-    if(gemiddeldeshow1 == false)
-    {
-        result = 9.3 + 8.9 + 8.9;
-        Praktijk = result/3;
-        // hier onder rond ik het getal af
-        Praktijkrs = Math.round(Praktijk*10)/10;
-        document.getElementById("span1").style.display = "none";
-        document.getElementById("gemiddeldePra").innerHTML += Praktijkrs;
-        console.log(Praktijk);
-        gemiddeldeshow1 = true;
-    }
-    else
-    {
-    }
-}
-
-var gemiddeldeshow2 = false;
-function gemiddeldeRea(Realiseren)
-{
-    if(gemiddeldeshow2 == false)
-    {
-        result = 9.3 + 8.8 + 9;
-        Realiseren = result/3;
-        Realiserenrs = Math.round(Realiseren*10)/10;
-        document.getElementById("span2").style.display = "none";
-        document.getElementById("gemiddeldeRea").innerHTML += Realiserenrs;
-        console.log(Realiseren);
-        gemiddeldeshow2 = true;
-    }
-    else
-    {
-    }
-}
-
-var gemiddeldeshow3 = false;
-function gemiddeldePo(Plannen)
-{
-    if(gemiddeldeshow3 == false)
-    {
-        result = 9.3 + 8.5 + 8.5;
-        Plannen = result/3;
-        Plannenrs = Math.round(Plannen*10)/10;
-        document.getElementById("span3").style.display = "none";
-        document.getElementById("gemiddeldePo").innerHTML += Plannenrs;
-        console.log(Plannen);
-        gemiddeldeshow3 = true;
-    }
-    else
-    {
-    }
-}
-
-var gemiddeldeshow4 = false;
-function gemiddeldeTv(Testen)
-{
-    if(gemiddeldeshow4 == false)
-    {
-        result = 9.2 + 8.9 + 8.6;
-        Testen = result/3;
-        Testenrs = Math.round(Testen*10)/10;
-        document.getElementById("span4").style.display = "none";
-        document.getElementById("gemiddeldeTv").innerHTML += Testenrs;
-        console.log(Testen);
-        gemiddeldeshow4 = true;
-    }
-    else
-    {
-    }
-}
-
-var gemiddeldeshow5 = false;
-function gemiddeldeCo(Computer)
-{
-    if(gemiddeldeshow5 == false)
-    {
-        result = 9.2 + 8.5 + 9;
-        Computer = result/3;
-        Computerrs = Math.round(Computer*10)/10;
-        document.getElementById("span5").style.display = "none";
-        document.getElementById("gemiddeldeCo").innerHTML += Computerrs;
-        console.log(Computer);
-        gemiddeldeshow5 = true;
-    }
-    else
-    {
-    }
-}
-
-function gemiddelde_alles()
-{
-    gemiddeldePra()
-    gemiddeldeRea()
-    gemiddeldePo()
-    gemiddeldeTv()
-    gemiddeldeCo()
-}
 
 function emailverzenden()
 {
@@ -138,7 +37,6 @@ function emailverzenden()
     })
 }
 
-  const huidigJaar = new Date().getFullYear();
-
-  
-  document.getElementById('jaar').textContent = huidigJaar;
+ 
+const huidigJaar = new Date().getFullYear();
+document.getElementById('jaar').textContent = huidigJaar;
