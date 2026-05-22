@@ -392,17 +392,25 @@ h2::after {
 ========================= */
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    text-align: center;
+
     color: #667085;
 
     background: transparent;
-
-    text-align: center;
 
     padding: 1.2rem;
 }
 
 footer p {
+    margin: 0;
     color: #667085;
+    text-align: center;
 }
 
 /* =========================================================
@@ -605,4 +613,5 @@ footer p {
     .submenu {
         display: none;
     }
+
 }
